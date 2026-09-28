@@ -1,0 +1,12 @@
+Future<String> loadStudentData() async {
+  print("Loading student information...");
+
+  return "Sandy";
+}
+
+void main() async {
+  print("Starting request...");
+
+  print("Student information loaded successfully!");
+  print("Student Name: $studentName");
+}
