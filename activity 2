@@ -1,11 +1,18 @@
+// This program simulates loading student information from a server.
+
 Future<String> loadStudentData() async {
   print("Loading student information...");
+
+  // Simulates a 3-second loading process.
+  await Future.delayed(Duration(seconds: 3));
 
   return "Sandy";
 }
 
 void main() async {
   print("Starting request...");
+
+  String studentName = await loadStudentData();
 
   print("Student information loaded successfully!");
   print("Student Name: $studentName");
